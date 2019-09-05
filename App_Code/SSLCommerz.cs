@@ -30,7 +30,10 @@ public class SSLCommerz
 
     public SSLCommerz(string Store_ID, string Store_Pass, bool Store_Test_Mode = false)
 	{
-        if (Store_ID != "" && Store_Pass != "")
+        
+	    System.Net.ServicePointManager.SecurityProtocol = (SecurityProtocolType)0x00000C00;
+	    
+	    if (Store_ID != "" && Store_Pass != "")
         {
             this.Store_ID = Store_ID;
             this.Store_Pass = Store_Pass;
