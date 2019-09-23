@@ -17,8 +17,8 @@ public partial class _Default : System.Web.UI.Page
         PostData.Add("total_amount", "1150.00");
         PostData.Add("tran_id", "TESTASPNET1234");
         PostData.Add("success_url",baseUrl+"Success.aspx");
-        PostData.Add("fail_url", "https://sandbox.sslcommerz.com/developer/fail.php");
-        PostData.Add("cancel_url", "https://sandbox.sslcommerz.com/developer/cancel.php");
+        PostData.Add("fail_url", baseUrl+"Fail.aspx"); // "Fail.aspx" page needs to be created
+        PostData.Add("cancel_url", baseUrl+"Cancel.aspx"); // "Cancel.aspx" page needs to be created
         PostData.Add("version", "3.00");
         PostData.Add("cus_name", "ABC XY");
         PostData.Add("cus_email", "abc.xyz@mail.co");
