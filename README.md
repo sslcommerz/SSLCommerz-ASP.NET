@@ -9,6 +9,7 @@
 
 1. First create your Sanbox(Test Environment) store account from below url. After registration you will get two mail. One for Store_id and Store_password. Another one for Report panel access.	
 > [Sandbox Account](https://developer.sslcommerz.com/registration/ "SSLCommerz Sandbox Registration")
+
 > Note: For live store id or account you have to communicate with us. Our mail address: `operation@sslcommerz.com`
 
 2. Then give the store_id and store_password in Default.aspx.cs and Success.aspx.cs page. 
@@ -24,7 +25,7 @@ In case of false, user should check status in that first returned response.
 
 
 ## Help URL
- 1. [Developer Paget](https://developer.sslcommerz.com/docs.html "SSLCommerz Developer Page") 
+ 1. [Developer Page](https://developer.sslcommerz.com/docs.html "SSLCommerz Developer Page") 
 
 ## Check List After Making the site Live or Connect with Live SSLCOMMERZ
 Customer need to do a live transaction to check the full process. After the transaction below things need to ensure
