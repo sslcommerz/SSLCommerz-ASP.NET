@@ -4,6 +4,7 @@
 
 1. Visual Studio 2017
 2. [Sandbox Account](https://developer.sslcommerz.com/registration/ "SSLCommerz Sandbox Registration")
+3. TLS V1.2
 
 ## Process flow to integrate SSLCommerz by using ASP.Net sample code.
 

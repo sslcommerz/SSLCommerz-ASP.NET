@@ -24,7 +24,7 @@ public class SSLCommerz
     protected bool Store_Test_Mode;
 
     protected string SSLCz_URL = "https://securepay.sslcommerz.com/";
-    protected string Submit_URL = "gwprocess/v3/api.php";
+    protected string Submit_URL = "gwprocess/v4/api.php";
     protected string Validation_URL = "validator/api/validationserverAPI.php";
     protected string Checking_URL = "validator/api/merchantTransIDvalidationAPI.php";
 
@@ -317,5 +317,10 @@ public class SSLCommerz
         public string validated_on { get; set; }
         public string gw_version { get; set; }
         public string token_key { get; set; }
+        public string shipping_method { get; set; }
+        public string num_of_item { get; set; }
+        public string product_name { get; set; }
+        public string product_profile { get; set; }
+        public string product_category { get; set; }
     }
 }

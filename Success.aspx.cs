@@ -13,11 +13,11 @@ public partial class Success : System.Web.UI.Page
         {
             string TrxID = Request.Form["tran_id"];
             // AMOUNT and Currency FROM DB FOR THIS TRANSACTION
-            string amount = "1150";
+            string amount = "15";
             string currency = "BDT";
 
             SSLCommerz sslcz = new SSLCommerz("testbox", "qwerty", true);
-            Response.Write(sslcz.OrderValidate(TrxID, amount, currency, Request));
+            Response.Write("Validation Response: "+sslcz.OrderValidate(TrxID, amount, currency, Request));
         }
         else {
             Response.Write("not found");

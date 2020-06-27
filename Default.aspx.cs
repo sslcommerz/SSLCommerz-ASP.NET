@@ -14,7 +14,7 @@ public partial class _Default : System.Web.UI.Page
 
         // CREATING LIST OF POST DATA
         NameValueCollection PostData = new NameValueCollection();
-        PostData.Add("total_amount", "1150.00");
+        PostData.Add("total_amount", "15.00");
         PostData.Add("tran_id", "TESTASPNET1234");
         PostData.Add("success_url",baseUrl+"Success.aspx");
         PostData.Add("fail_url", baseUrl+"Fail.aspx"); // "Fail.aspx" page needs to be created
@@ -22,7 +22,7 @@ public partial class _Default : System.Web.UI.Page
         PostData.Add("version", "3.00");
         PostData.Add("cus_name", "ABC XY");
         PostData.Add("cus_email", "abc.xyz@mail.co");
-        PostData.Add( "cus_add1", "Address Line On");
+        PostData.Add("cus_add1", "Address Line On");
         PostData.Add("cus_add2", "Address Line Tw");
         PostData.Add("cus_city", "City Nam");
         PostData.Add("cus_state", "State Nam");
@@ -41,8 +41,13 @@ public partial class _Default : System.Web.UI.Page
         PostData.Add("value_b", "ref00");
         PostData.Add("value_c", "ref00");
         PostData.Add("value_d", "ref00");
+  		PostData.Add("shipping_method", "NO");
+		PostData.Add("num_of_item", "1");
+		PostData.Add("product_name", "Demo");
+		PostData.Add("product_profile", "general");
+		PostData.Add("product_category", "Demo");
 
-        SSLCommerz sslcz = new SSLCommerz("YOUR STORE ID", "YOUR STORE PASSWORD");
+        SSLCommerz sslcz = new SSLCommerz("testbox", "qwerty", true);
         String response = sslcz.InitiateTransaction(PostData);
         Response.Redirect(response);
     }
